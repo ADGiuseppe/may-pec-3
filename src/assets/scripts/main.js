@@ -1,16 +1,23 @@
-/**
- * Import dependencies from node_modules
- * see commented examples below
- */
+// Main JavaScript entry point for your project
 
-// import 'some-node-module';
-// import SomeModule from 'some-node-module';
 
-/**
- * Write any other JavaScript below
- */
+window.copyQuote = function(id) {
+  const text = document.getElementById(id).innerText;
+  navigator.clipboard.writeText(text).then(() => {
+    const modal = new bootstrap.Modal(document.getElementById('quoteCopiedModal'));
+    modal.show();
+    setTimeout(() => {
+      modal.hide();
+    }, 1200);
+  });
+};
 
-+( function() {
-  const university = "UOC";
-  console.log(`Hello, ${university}!`);
-} )();
+      // Show toast on successful form submission
+      document.getElementById('signupForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        const toastEl = document.getElementById('signupToast');
+        const toast = new bootstrap.Toast(toastEl);
+        toast.show();
+        // Optionally reset the form
+        e.target.reset();
+      });
