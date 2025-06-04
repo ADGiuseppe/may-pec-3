@@ -21,7 +21,7 @@
         </div>
       </section>
       <section class="max-w-[900px] mx-auto pt-8 px-4 flex flex-col gap-10 bg-secondary rounded-2xl text-xl leading-relaxed" style="container-type: inline-size;">
-        <h2 class="text-3xl font-semibold mb-6 text-center">What Is a Circular Economy?</h2>
+        <h2 class="article-title mb-6">What Is a Circular Economy?</h2>
         <section>
           <p>
             Ever wondered where your old phone or empty shampoo bottle ends up? In a circular economy, the answer isn't “the landfill”—it's back into use. 
@@ -38,13 +38,13 @@
         </section>
         <div class="flex flex-col md:flex-row gap-4 md:gap-12 items-start mb-6 border-2 border-dashed border-primary rounded-lg p-4">
           <blockquote
-            class="bg-secondary text-primary border-l-4 border-primary px-8 py-6 text-lg italic rounded-lg m-0 md:text-xl md:w-7/12"
+            class="article-quote"
             id="quote-1">
             “A circular economy is more than recycling. It's about designing waste out of the system from the very beginning.”
             <div>
               <button
                 type="button"
-                class="mt-2 px-4 py-2 bg-primary text-white rounded-md font-semibold hover:bg-accent transition"
+                class="btn-primary"
                 onclick="copyQuote('quote-1')">
                 Copy Quote
               </button>
@@ -56,7 +56,7 @@
             </p>
           </div>
         </div>
-        <h2 class="text-3xl font-semibold mb-6 text-center">What Are the Economic and Social Benefits of Going Circular?</h2>
+        <h2 class="article-title mb-6">What Are the Economic and Social Benefits of Going Circular?</h2>
         <section>
           <p>
             Think the circular economy is just an environmental trend? Think again—it’s also smart economics. By using resources more efficiently, companies can cut costs, reduce reliance on volatile global supply chains, and unlock new business opportunities. The European Union estimates that the shift to a circular economy could generate 700,000 new jobs by 2030.
@@ -69,7 +69,7 @@
           </div>
         </section>
         <div class="flex flex-col md:flex-row gap-4 md:gap-12 items-start mb-6 border-2 border-dashed border-primary rounded-lg p-4">
-          <blockquote class="bg-secondary text-primary border-l-4 border-primary px-8 py-6 text-lg italic rounded-lg m-0 md:text-xl md:w-7/12" id="quote-2">
+          <blockquote class="article-quote" id="quote-2">
             “In a natural ecosystem, there is no such thing as waste. Everything feeds into something else. What if our economy did the same—and helped communities along the way?”
             <div>
               <button
@@ -86,59 +86,39 @@
             </p>
           </div>
         </div>
-        <h2 class="text-3xl font-semibold mt-10 mb-6 text-center">Circular Actions You Can Take Today</h2>
+        <h2 class="article-title mt-10 mb-6">Circular Actions You Can Take Today</h2>
         <ol class="list-decimal pl-5 my-8 text-primary text-lg">
-          <li class="mb-6 text-xl">
+          <li class="list-item">
             <strong class="block mb-1">Buy durable products</strong>
             <p class="opacity-85">Choose items that are built to last—and avoid planned obsolescence.</p>
           </li>
-          <li class="mb-6 text-xl">
+          <li class="list-item">
             <strong class="block mb-1">Repair and reuse before replacing</strong>
             <p class="opacity-85">Mend your clothes, fix that toaster!</p>
           </li>
-          <li class="mb-6 text-xl">
+          <li class="list-item">
             <strong class="block mb-1">Shop secondhand</strong>
             <p class="opacity-85">From clothes to furniture, there's plenty of life left in pre-loved goods.</p>
           </li>
-          <li class="mb-6 text-xl">
+          <li class="list-item">
             <strong class="block mb-1">Recycle right</strong>
             <p class="opacity-85">Know what your local recycling center actually accepts.</p>
           </li>
-          <li class="mb-6 text-xl">
+          <li class="list-item">
             <strong class="block mb-1">Support circular brands</strong>
             <p class="opacity-85">Look for companies with take-back programs, eco-packaging, and modular designs.</p>
           </li>
-          <li class="mb-6 text-xl">
+          <li class="list-item">
             <strong class="block mb-1">Compost food scraps</strong>
             <p class="opacity-85">Compost instead of sending food waste to landfills.</p>
           </li>
-          <li class="mb-6 text-xl">
+          <li class="list-item">
             <strong class="block mb-1">Refuse single-use packaging</strong>
             <p class="opacity-85">When possible, opt for refillable options.</p>
           </li>
         </ol>
       </section>
-      <section class="max-w-[900px] mx-auto my-12 px-4 py-8 bg-secondary rounded-lg shadow-md">
-        <h2 class="text-3xl mb-8 font-semibold text-center text-primary">Bibliography</h2>
-        <ul class="list-disc pl-5 text-primary text-lg">
-          <li>
-            European Parliament. (n.d.). Circular economy: Definition, importance and benefits.
-            <a href="https://www.europarl.europa.eu/topics/en/article/20151201STO05603/circular-economy-definition-importance-and-benefits" target="_blank" rel="noopener" class="text-tertiary underline hover:text-accent">[link]</a>
-          </li>
-          <li>
-            Repsol. (n.d.). Circular economy.
-            <a href="https://www.repsol.com/en/sustainability/sustainability-pillars/environment/circular-economy/index.cshtml" target="_blank" rel="noopener" class="text-tertiary underline hover:text-accent">[link]</a>
-          </li>
-          <li>
-            Journal Review. (2024, April 19). Embracing a circular economy.
-            <a href="https://www.journalreview.com/stories/embracing-a-circular-economy,339591?" target="_blank" rel="noopener" class="text-tertiary underline hover:text-accent">[link]</a>
-          </li>
-          <li>
-            U.S. Environmental Protection Agency. (n.d.). What is a circular economy?
-            <a href="https://www.epa.gov/circulareconomy/what-circular-economy" target="_blank" rel="noopener" class="text-tertiary underline hover:text-accent">[link]</a>
-          </li>
-        </ul>
-      </section>
+      <include src="./views/bibliography.html"></include>
     </main>
     <include src="./views/footer.html"></include>
     <script type="module" src="./assets/scripts/main.js"></script>

@@ -12,24 +12,7 @@
     <main class="min-h-screen flex items-center justify-center bg-primary-light py-12">
       <section class="bg-secondary rounded-xl shadow-md p-8 w-full max-w-md mx-auto">
         <h1 class="text-2xl font-bold text-primary mb-6 text-center">Sign Up for the Event</h1>
-        <form id="signupForm">
-          <div class="mb-4">
-            <label for="signupName" class="block text-primary font-medium mb-1">First Name</label>
-            <input type="text" id="signupName" placeholder="Enter your first name" required
-              class="block w-full rounded-md border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-accent focus:border-accent transition" />
-          </div>
-          <div class="mb-4">
-            <label for="signupLastName" class="block text-primary font-medium mb-1">Last Name</label>
-            <input type="text" id="signupLastName" placeholder="Enter your last name" required
-              class="block w-full rounded-md border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-accent focus:border-accent transition" />
-          </div>
-          <div class="mb-4">
-            <label for="signupEmail" class="block text-primary font-medium mb-1">Email address</label>
-            <input type="email" id="signupEmail" placeholder="Enter your email" required
-              class="block w-full rounded-md border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-accent focus:border-accent transition" />
-          </div>
-          <button type="submit" class="w-full mt-4 bg-primary text-white font-semibold py-2 rounded-md hover:bg-accent transition">Sign Up</button>
-        </form>
+        <include src="./views/signup-form.html"></include>
       </section>
       <div class="fixed bottom-0 left-1/2 -translate-x-1/2 p-3 z-50">
         <div id="signupToast" class="flex items-center bg-primary text-white rounded shadow-lg px-4 py-3 hidden" role="alert" aria-live="assertive" aria-atomic="true">

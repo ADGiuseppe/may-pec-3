@@ -2,3 +2,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.article-title {
+  @apply text-3xl font-semibold text-center;
+}
+.btn-primary {
+  @apply bg-primary text-white font-semibold px-4 py-2 rounded hover:bg-accent transition;
+}
+.article-quote {
+  @apply bg-secondary text-primary border-l-4 border-primary px-8 py-6 text-lg italic rounded-lg m-0 md:text-xl md:w-7/12;
+}
+.list-item {
+  @apply mb-6 text-xl;
+}
