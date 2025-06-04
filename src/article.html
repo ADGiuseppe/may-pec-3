@@ -4,23 +4,25 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>UOC Boilerplate</title>
-    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
     <link rel="stylesheet" href="./assets/styles/tailwind.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
   </head>
   <body>
     <include src="./views/header.html"></include>
-    <main class="article__main">
-      <section class="article__hero">
-        <h1 class="article__hero-title">
-          Circular Economy: A New Approach to Sustainability
-        </h1>
-        <p class="article__hero-author">by Author One</p>
+    <main class="font-sans text-primary bg-primary-light min-h-screen">
+      <section class="relative bg-secondary text-center py-16 px-4 pb-12 rounded-b-xl mb-8 overflow-hidden">
+        <div class="absolute inset-0 bg-cover bg-center opacity-45 z-0" style="background-image: url('./assets/images/article_head_img.jpg');"></div>
+        <div class="relative z-10">
+          <h1 class="text-4xl font-normal my-6 leading-tight">
+            Circular Economy: A New Approach to Sustainability
+          </h1>
+          <p class="text-primary opacity-70 text-base mb-0">by Author One</p>
+        </div>
       </section>
-      <section class="article__content">
-        <h2 class="article__columns-heading">What Is a Circular Economy?</h2>
-        <section class="article__text-section">
+      <section class="max-w-[900px] mx-auto pt-8 px-4 flex flex-col gap-10 bg-secondary rounded-2xl text-xl leading-relaxed" style="container-type: inline-size;">
+        <h2 class="text-3xl font-semibold mb-6 text-center">What Is a Circular Economy?</h2>
+        <section>
           <p>
             Ever wondered where your old phone or empty shampoo bottle ends up? In a circular economy, the answer isn't “the landfill”—it's back into use. 
           </p>
@@ -30,135 +32,114 @@
           <p>
             Through better design, smarter use of materials, and a commitment to sustainability, the circular economy aims to turn waste into a resource, extending the life of everything from packaging to electronics.
           </p>
-          <div class="article__img-block">
-            <img src="./assets/images/article_img_1.png" alt="Circular Economy" class="article__img-block-image">
+          <div class="bg-secondary rounded-lg text-center py-12 my-8 overflow-hidden">
+            <img src="./assets/images/article_img_1.png" alt="Circular Economy" class="max-w-[450px] w-full h-auto mx-auto block rounded-lg">
           </div>
         </section>
-        <div class="article__columns">
-          <blockquote class="article__columns-blockquote" id="quote-1">
+        <div class="flex flex-col md:flex-row gap-4 md:gap-12 items-start mb-6 border-2 border-dashed border-primary rounded-lg p-4">
+          <blockquote
+            class="bg-secondary text-primary border-l-4 border-primary px-8 py-6 text-lg italic rounded-lg m-0 md:text-xl md:w-7/12"
+            id="quote-1">
             “A circular economy is more than recycling. It's about designing waste out of the system from the very beginning.”
             <div>
               <button
                 type="button"
-                class="btn btn-primary mt-2"
+                class="mt-2 px-4 py-2 bg-primary text-white rounded-md font-semibold hover:bg-accent transition"
                 onclick="copyQuote('quote-1')">
                 Copy Quote
               </button>
             </div>
           </blockquote>
-          <div class="article__columns-text">
+          <div class="text-base leading-relaxed md:w-5/12">
             <p>
               Let’s face it—our current way of living is putting the planet under pressure. The Earth’s resources aren’t unlimited, and we're using them faster than they can regenerate. The circular economy tackles that by protecting natural ecosystems, cutting emissions, and reducing dependence on raw materials. For example, more than 80% of a product’s environmental impact is locked in during the design stage. So, if we design smarter, we pollute less.
             </p>
           </div>
         </div>
-        <h2 class="article__columns-heading">What Are the Economic and Social Benefits of Going Circular?</h2>
-        <section class="article__text-section">
+        <h2 class="text-3xl font-semibold mb-6 text-center">What Are the Economic and Social Benefits of Going Circular?</h2>
+        <section>
           <p>
             Think the circular economy is just an environmental trend? Think again—it’s also smart economics. By using resources more efficiently, companies can cut costs, reduce reliance on volatile global supply chains, and unlock new business opportunities. The European Union estimates that the shift to a circular economy could generate 700,000 new jobs by 2030.
           </p>
           <p>
             Social benefits also often get overlooked; waste doesn’t affect everyone equally. Landfills and polluting industries are often located near low-income and marginalized communities, exposing them to greater health risks. The circular economy has the potential to change that narrative by reducing pollution at the source and promoting cleaner, safer jobs through green innovation. The U.S. Environmental Protection Agency (EPA) refers to it as building a “circular economy for all.”
           </p>
-          <div class="article__img-block">
-            <img src="./assets/images/article_img_2.png" alt="Circular Economy Example" class="article__img-block-image">
+          <div class="bg-secondary rounded-lg text-center py-12 my-8 overflow-hidden">
+            <img src="./assets/images/article_img_2.png" alt="Circular Economy Example" class="max-w-[450px] w-full h-auto mx-auto block rounded-lg">
           </div>
         </section>
-        <div class="article__columns">
-          <blockquote class="article__columns-blockquote" id="quote-2">
+        <div class="flex flex-col md:flex-row gap-4 md:gap-12 items-start mb-6 border-2 border-dashed border-primary rounded-lg p-4">
+          <blockquote class="bg-secondary text-primary border-l-4 border-primary px-8 py-6 text-lg italic rounded-lg m-0 md:text-xl md:w-7/12" id="quote-2">
             “In a natural ecosystem, there is no such thing as waste. Everything feeds into something else. What if our economy did the same—and helped communities along the way?”
             <div>
               <button
                 type="button"
-                class="btn btn-primary mt-2"
+                class="mt-2 px-4 py-2 bg-primary text-white rounded-md font-semibold hover:bg-accent transition"
                 onclick="copyQuote('quote-2')">
                 Copy Quote
               </button>
             </div>
           </blockquote>
-          <div class="article__columns-text">
+          <div class="text-base leading-relaxed md:w-5/12">
             <p>
               When designed thoughtfully, circular systems don’t just help the environment—they create more just, inclusive, and healthier societies.
             </p>
           </div>
         </div>
-        <h2 class="article__list-title" style="margin-top:2rem;">Circular Actions You Can Take Today</h2>
-        <ol class="article__list">
-          <li class="article__list-item">
-            <strong class="article__list-item-strong">Buy durable products</strong>
-            <p>
-              Choose items that are built to last—and avoid planned obsolescence.
-            </p>
+        <h2 class="text-3xl font-semibold mt-10 mb-6 text-center">Circular Actions You Can Take Today</h2>
+        <ol class="list-decimal pl-5 my-8 text-primary text-lg">
+          <li class="mb-6 text-xl">
+            <strong class="block mb-1">Buy durable products</strong>
+            <p class="opacity-85">Choose items that are built to last—and avoid planned obsolescence.</p>
           </li>
-          <li class="article__list-item">
-            <strong class="article__list-item-strong">Repair and reuse before replacing</strong>
-            <p>
-              Mend your clothes, fix that toaster!
-            </p>
+          <li class="mb-6 text-xl">
+            <strong class="block mb-1">Repair and reuse before replacing</strong>
+            <p class="opacity-85">Mend your clothes, fix that toaster!</p>
           </li>
-          <li class="article__list-item">
-            <strong class="article__list-item-strong">Shop secondhand</strong>
-            <p>
-              From clothes to furniture, there's plenty of life left in pre-loved goods.
-            </p>
+          <li class="mb-6 text-xl">
+            <strong class="block mb-1">Shop secondhand</strong>
+            <p class="opacity-85">From clothes to furniture, there's plenty of life left in pre-loved goods.</p>
           </li>
-          <li class="article__list-item">
-            <strong class="article__list-item-strong">Recycle right</strong>
-            <p>
-              Know what your local recycling center actually accepts.
-            </p>
+          <li class="mb-6 text-xl">
+            <strong class="block mb-1">Recycle right</strong>
+            <p class="opacity-85">Know what your local recycling center actually accepts.</p>
           </li>
-          <li class="article__list-item">
-            <strong class="article__list-item-strong">Support circular brands</strong>
-            <p>
-              Look for companies with take-back programs, eco-packaging, and modular designs.
-            </p>
+          <li class="mb-6 text-xl">
+            <strong class="block mb-1">Support circular brands</strong>
+            <p class="opacity-85">Look for companies with take-back programs, eco-packaging, and modular designs.</p>
           </li>
-          <li class="article__list-item">
-            <strong class="article__list-item-strong">Compost food scraps</strong>
-            <p>
-              Compost instead of sending food waste to landfills.
-            </p>
+          <li class="mb-6 text-xl">
+            <strong class="block mb-1">Compost food scraps</strong>
+            <p class="opacity-85">Compost instead of sending food waste to landfills.</p>
           </li>
-          <li class="article__list-item">
-            <strong class="article__list-item-strong">Refuse single-use packaging</strong>
-            <p>
-              When possible, opt for refillable options.
-            </p>
+          <li class="mb-6 text-xl">
+            <strong class="block mb-1">Refuse single-use packaging</strong>
+            <p class="opacity-85">When possible, opt for refillable options.</p>
           </li>
         </ol>
       </section>
-      <section class="article__bibliography">
-        <h2 class="article__bibliography-title">Bibliography</h2>
-        <ul>
+      <section class="max-w-[900px] mx-auto my-12 px-4 py-8 bg-secondary rounded-lg shadow-md">
+        <h2 class="text-3xl mb-8 font-semibold text-center text-primary">Bibliography</h2>
+        <ul class="list-disc pl-5 text-primary text-lg">
           <li>
             European Parliament. (n.d.). Circular economy: Definition, importance and benefits.
-            <a href="https://www.europarl.europa.eu/topics/en/article/20151201STO05603/circular-economy-definition-importance-and-benefits" target="_blank" rel="noopener">[link]</a>
+            <a href="https://www.europarl.europa.eu/topics/en/article/20151201STO05603/circular-economy-definition-importance-and-benefits" target="_blank" rel="noopener" class="text-tertiary underline hover:text-accent">[link]</a>
           </li>
           <li>
             Repsol. (n.d.). Circular economy.
-            <a href="https://www.repsol.com/en/sustainability/sustainability-pillars/environment/circular-economy/index.cshtml" target="_blank" rel="noopener">[link]</a>
+            <a href="https://www.repsol.com/en/sustainability/sustainability-pillars/environment/circular-economy/index.cshtml" target="_blank" rel="noopener" class="text-tertiary underline hover:text-accent">[link]</a>
           </li>
           <li>
             Journal Review. (2024, April 19). Embracing a circular economy.
-            <a href="https://www.journalreview.com/stories/embracing-a-circular-economy,339591?" target="_blank" rel="noopener">[link]</a>
+            <a href="https://www.journalreview.com/stories/embracing-a-circular-economy,339591?" target="_blank" rel="noopener" class="text-tertiary underline hover:text-accent">[link]</a>
           </li>
           <li>
             U.S. Environmental Protection Agency. (n.d.). What is a circular economy?
-            <a href="https://www.epa.gov/circulareconomy/what-circular-economy" target="_blank" rel="noopener">[link]</a>
+            <a href="https://www.epa.gov/circulareconomy/what-circular-economy" target="_blank" rel="noopener" class="text-tertiary underline hover:text-accent">[link]</a>
           </li>
         </ul>
       </section>
     </main>
-    <div class="modal fade" id="quoteCopiedModal" tabindex="-1" aria-labelledby="quoteCopiedModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-body text-center">
-            <strong>Quote copied</strong>
-          </div>
-        </div>
-      </div>
-    </div>
     <include src="./views/footer.html"></include>
     <script type="module" src="./assets/scripts/main.js"></script>
   </body>

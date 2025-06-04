@@ -4,39 +4,41 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>Sign Up | UOC Boilerplate</title>
-    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss">
     <link rel="stylesheet" href="./assets/styles/tailwind.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   </head>
   <body>
     <include src="./views/header.html"></include>
-    <main class="signup__main">
-      <section class="signup__section">
-        <h1 class="signup__title">Sign Up for the Event</h1>
+    <main class="min-h-screen flex items-center justify-center bg-primary-light py-12">
+      <section class="bg-secondary rounded-xl shadow-md p-8 w-full max-w-md mx-auto">
+        <h1 class="text-2xl font-bold text-primary mb-6 text-center">Sign Up for the Event</h1>
         <form id="signupForm">
-          <div class="mb-3">
-            <label for="signupName" class="signup__form-label">First Name</label>
-            <input type="text" class="signup__form-control" id="signupName" placeholder="Enter your first name" required>
+          <div class="mb-4">
+            <label for="signupName" class="block text-primary font-medium mb-1">First Name</label>
+            <input type="text" id="signupName" placeholder="Enter your first name" required
+              class="block w-full rounded-md border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-accent focus:border-accent transition" />
           </div>
-          <div class="mb-3">
-            <label for="signupLastName" class="signup__form-label">Last Name</label>
-            <input type="text" class="signup__form-control" id="signupLastName" placeholder="Enter your last name" required>
+          <div class="mb-4">
+            <label for="signupLastName" class="block text-primary font-medium mb-1">Last Name</label>
+            <input type="text" id="signupLastName" placeholder="Enter your last name" required
+              class="block w-full rounded-md border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-accent focus:border-accent transition" />
           </div>
-          <div class="mb-3">
-            <label for="signupEmail" class="signup__form-label">Email address</label>
-            <input type="email" class="signup__form-control" id="signupEmail" placeholder="Enter your email" required>
+          <div class="mb-4">
+            <label for="signupEmail" class="block text-primary font-medium mb-1">Email address</label>
+            <input type="email" id="signupEmail" placeholder="Enter your email" required
+              class="block w-full rounded-md border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-accent focus:border-accent transition" />
           </div>
-          <button type="submit" class="btn btn-primary w-100 mt-3">Sign Up</button>
+          <button type="submit" class="w-full mt-4 bg-primary text-white font-semibold py-2 rounded-md hover:bg-accent transition">Sign Up</button>
         </form>
       </section>
-      <div class="position-fixed bottom-0 start-50 translate-middle-x p-3">
-        <div id="signupToast" class="toast align-items-center text-bg-primary border-0" role="alert" aria-live="assertive" aria-atomic="true">
-          <div class="d-flex">
-            <div class="toast-body">
-              Sign up successful. Thank you for showing interest in our event!
-            </div>
-            <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
-          </div>
+      <div class="fixed bottom-0 left-1/2 -translate-x-1/2 p-3 z-50">
+        <div id="signupToast" class="flex items-center bg-primary text-white rounded shadow-lg px-4 py-3 hidden" role="alert" aria-live="assertive" aria-atomic="true">
+          <span>
+            Sign up successful. Thank you for showing interest in our event!
+          </span>
+          <button type="button" class="ml-4 text-white hover:text-accent focus:outline-none" data-bs-dismiss="toast" aria-label="Close">
+            <i class="fas fa-times"></i>
+          </button>
         </div>
       </div>
     </main>
