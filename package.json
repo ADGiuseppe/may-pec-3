@@ -15,7 +15,7 @@
     "web": {
       "context": "browser",
       "publicUrl": "./",
-      "source": "src/article.html",
+      "source": "src/index.html",
       "engines": {
         "browsers": "last 2 versions, > 0.5%, not dead"
       }
